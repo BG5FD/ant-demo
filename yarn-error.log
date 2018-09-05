@@ -1,0 +1,32 @@
+Arguments: 
+  /home/bg5/.nvm/versions/node/v8.11.3/bin/node /home/bg5/.nvm/versions/node/v8.11.3/bin/yarn start
+
+PATH: 
+  /home/bg5/.nvm/versions/node/v8.11.3/bin:/home/bg5/bin:/home/bg5/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  8.11.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/bg5/Desktop/scp/antd-demo/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /home/bg5/.nvm/versions/node/v8.11.3/lib/node_modules/yarn/lib/cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (/home/bg5/.nvm/versions/node/v8.11.3/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /home/bg5/.nvm/versions/node/v8.11.3/lib/node_modules/yarn/lib/cli.js:103:13
+      at <anonymous>
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  

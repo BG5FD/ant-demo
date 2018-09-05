@@ -1,0 +1,51 @@
+{
+  # "extends": "umi",
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended",
+  ],
+  "plugins": [
+    # "react",
+    "import",
+    "flowtype",
+  ],
+  "env": {
+    "browser": true,
+    "mocha": true
+  },
+  "rules": {
+    # "import/no-unresolved": 0,
+    # 无奈，暂时先用此方法禁用路径找不到的问题
+    "import/no-unresolved": [
+      "error", {
+        "ignore": ["app/", "utils/"],
+      }
+    ],
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+    "react/forbid-prop-types": [<enabled>, {
+      "forbid": [<string>], checkContextTypes: <boolean>, checkChildContextTypes: <boolean>
+    }],
+  },
+  "globals": {
+    "logger": true,
+    "log4javascript": true,
+  },
+  "settings": {
+    # "resolve": {
+    #     "app": "./src"
+    # },
+    "import/resolver": {
+      # "babel-module": {}
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+          "./src"
+        ]
+        # "moduleDirectory": [
+        #   "node_modules",
+        #   "app",
+        # ]
+      }
+    }
+  }
+}

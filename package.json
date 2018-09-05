@@ -1,0 +1,46 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "yarn start:dev",
+    "start:dev": "NODE_ENV=development PORT=8888 BROWSER=NONE CLEAR_CONSOLE=NONE roadhog server",
+    "start:pre": "NODE_ENV=development PORT=8888 BROWSER=NONE CLEAR_CONSOLE=NONE roadhog server",
+    "start-server": "yarn start-server:dev",
+    "start-server:dev": "node server.js",
+    "build": "roadhog build",
+    "lint": "eslint --ext .js src"
+  },
+  "dependencies": {
+    "antd": "^3.8.1",
+    "babel-plugin-import": "^1.8.0",
+    "config": "^2.0.1",
+    "dva": "^2.4.0",
+    "echarts": "^4.1.0",
+    "js-cookie": "^2.2.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "qs": "^6.5.2",
+    "react": "^16.2.0",
+    "react-countup": "^4.0.0-alpha.6",
+    "react-dom": "^16.2.0",
+    "socket.io": "^2.1.1",
+    "umi-plugin-polyfill": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-dva-hmr": "^0.4.1",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-umi": "^0.1.1",
+    "eslint-import-resolver-babel-module": "^4.0.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "flow-bin": "^0.79.1",
+    "husky": "^0.12.0",
+    "redbox-react": "^1.4.3",
+    "roadhog": "^2.4.5"
+  }
+}

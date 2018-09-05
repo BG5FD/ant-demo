@@ -1,0 +1,31 @@
+.container{
+  padding: 30px 0px;
+  height: 100%;
+  overflow-y: auto;
+}
+.containerRow{
+  padding: 20px 0px;
+}
+.cardData{
+  font-size: 24px;
+  color: white;
+  height: 140px;
+}
+.container .containerRow .cardData p{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.iconFontSize{
+  font-size: 48px;
+}
+.userCountCard{
+  background-color: #bb27e0;
+}
+.taskCountCard{
+  background-color: #ffa05c;
+}
+.statusCard{
+  background-color: #69d419;
+}
+

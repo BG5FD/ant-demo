@@ -1,0 +1,56 @@
+{
+  "servers": {
+    "tasking": {
+      "host": "11.11.164.114",
+      "port": 8080,
+      "entrance": "/tasking",
+      "apiVersion": "v3.0.1"
+    },
+    "db": {
+      "host": "11.11.164.114",
+      "dbName": "scps3",
+      "port": 3306,
+      "user": "scps",
+      "password": "scps"
+    },
+    "notification": {
+      "host": "localhost",
+      "port": 8082
+    },
+    "graphql": {
+      "host": "localhost",
+      "port": 8081
+    },
+    "reporting": {
+      "host": "11.11.164.114",
+      "port": 8084
+    },
+    "pc": {
+      "host": "11.11.164.114",
+      "port": 8085
+    },
+    "asset": {
+      "host": "11.11.164.114",
+      "port": 8080,
+      "entrance": "/am",
+      "apiVersion": "v3.0.1"
+    },
+    "logging": {
+      "host": "localhost",
+      "port": 8083
+    },
+    "admin": {
+      "host": "11.11.164.114",
+      "port": 8080,
+      "entrance": "/admin"
+    }
+  },
+  "amqp": {
+    "host": "amqp://scp:Passc0de33!@11.11.164.114:5672",
+    "queue": "JOB_NOTIFICATION_APP_YAO",
+    "exchange": "JOB_NOTIFICATION",
+    "privilege": {
+      "queue": "privilege_notification_app_yao"
+    }
+  }
+}
